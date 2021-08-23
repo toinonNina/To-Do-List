@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+        "sass": "^1.38.0"
+    },
+    "name": "to-do-list",
+    "version": "1.0.0",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+        "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
