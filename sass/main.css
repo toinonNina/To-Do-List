@@ -3,6 +3,8 @@ h1 {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 main h2,
@@ -43,7 +45,10 @@ ul li {
   cursor: pointer;
   margin: 10px;
   padding: 10px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #fff;
   font-weight: 600;
   font-size: 18px;
@@ -54,9 +59,14 @@ ul li {
 }
 .flex .week {
   border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
 }
 .flex .week .day {
@@ -65,5 +75,4 @@ ul li {
   margin: 8px;
   padding: 9px;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

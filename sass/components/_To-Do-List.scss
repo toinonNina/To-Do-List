@@ -1,0 +1,37 @@
+.todolist {
+    border: 1px solid blue;
+    width: 50%;
+    .containertodo {
+        margin-top: 60px;
+    }
+}
+
+.list {
+    visibility: hidden;
+}
+
+ul {
+    list-style: none;
+    .complete {
+        text-decoration: line-through;
+        color: $color-inactif;
+        font-size: 14px;
+    }
+    li i {
+        float: right;
+    }
+    li:hover {
+        background: $color-bghover;
+        color: black
+    }
+    li {
+        background: $color-bg1;
+        cursor: pointer;
+        margin: 10px;
+        padding: 10px;
+        user-select: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}

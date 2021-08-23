@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="To Do List , Bullet journal Digital, Organiseur digital">
+    <title>My To-Do-List</title>
+    <link href="./public/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/530869a928.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <header>
+        <h1>Bullet Journal</h1>
+    </header>
+    <main>
+        <div class="flex">
+            <h2>weekly planner</h2><br>
 
+            <div class="week">
+                <article class="day">
+                    <h3>Lundi</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, est eveniet nesciunt facilis hic, at quibusdam quaerat itaque assumenda nulla corrupti? Eos illo, consequatur tenetur quis esse dolorem id possimus?
+                        </p>
+                    </div>
+                </article>
+                <article class="day">
+                    <h3>Mardi</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, est eveniet nesciunt facilis hic, at quibusdam quaerat itaque assumenda nulla corrupti? Eos illo, consequatur tenetur quis esse dolorem id possimus?
+                        </p>
+                    </div>
+                </article>
+                <article class="day">
+                    <h3>Mercredi</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, est eveniet nesciunt facilis hic, at quibusdam quaerat itaque assumenda nulla corrupti? Eos illo, consequatur tenetur quis esse dolorem id possimus?
+                        </p>
+                    </div>
+                </article>
+                <article class="day">
+                    <h3>Jeudi</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, est eveniet nesciunt facilis hic, at quibusdam quaerat itaque assumenda nulla corrupti? Eos illo, consequatur tenetur quis esse dolorem id possimus?
+                        </p>
+                    </div>
+                </article>
+                <article class="day">
+                    <h3>Vendredi</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, est eveniet nesciunt facilis hic, at quibusdam quaerat itaque assumenda nulla corrupti? Eos illo, consequatur tenetur quis esse dolorem id possimus?
+                        </p>
+                    </div>
+                </article>
+                <article class="day">
+                    <h3>Samedi</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, est eveniet nesciunt facilis hic, at quibusdam quaerat itaque assumenda nulla corrupti? Eos illo, consequatur tenetur quis esse dolorem id possimus?
+                        </p>
+                    </div>
+                </article>
+                <article class="day">
+                    <h3>Dimanche</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, est eveniet nesciunt facilis hic, at quibusdam quaerat itaque assumenda nulla corrupti? Eos illo, consequatur tenetur quis esse dolorem id possimus?
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <section class="todolist">
+            <h2>To-Do List</h2>
+            <div class="containertodo">
+                <form>
+                    <label for="todo" class="list">todolist</label>
+                    <input type="text" id="todo" placeholder="ajouter une nouvelle tâche...">
+                    <button id="add" type="submit" onclick="addTask();return false"> Ajouter</button>
+                </form>
+                <div class="error"></div>
+
+                <ul id="mytask">
+                    <li>
+                        <label><input type="checkbox" onclick="taskComplete(this)"> <span>Projet suivant</span></label>
+                        <i class="fa fa-trash" onclick="removeTask(this)"></i>
+                    </li>
+                    <li><label><input type="checkbox" onclick="taskComplete(this)" checked><span class="complete">Github</span></label>
+                        <i class="fa fa-trash" onclick="removeTask(this)"></i>
+                    </li>
+                    <li><label><input type="checkbox" onclick="taskComplete(this)" checked><span class="complete">Responsive</span></label>
+                        <i class="fa fa-trash" onclick="removeTask(this)"></i>
+                    </li>
+                    <li><label><input type="checkbox" onclick="taskComplete(this)" checked><span class="complete">Sass</span></label>
+                        <i class="fa fa-trash" onclick="removeTask(this)"></i>
+                    </li>
+                    <li><label><input type="checkbox" onclick="taskComplete(this)" checked><span class="complete">Validation W3C</span></label>
+                        <i class="fa fa-trash" onclick="removeTask(this)"></i>
+                    </li>
+                    <li><label><input type="checkbox" onclick="taskComplete(this)"><span>Projet To-Do-List</span></label>
+                        <i class="fa fa-trash" onclick="removeTask(this)"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="./public/js/todolist.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,16 @@
+.flex {
+    width: 50%;
+    .week {
+        border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        .day {
+            border: 1px solid green;
+            width: 270px;
+            margin: 8px;
+            padding: 9px;
+        }
+    }
+}
