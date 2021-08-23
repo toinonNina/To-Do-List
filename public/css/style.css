@@ -1,22 +1,49 @@
+body {
+  background-image: url(../../public/images/background.jpg);
+  background-repeat: repeat;
+  background-position: unset;
+}
+
 h1 {
   text-align: center;
+  color: white;
+  font-size: 50px;
+  background-color: #00526F;
+  border-radius: 50%;
+  padding: 30px;
+  width: 50%;
+  margin: auto;
 }
 
 main {
   display: flex;
+  margin: 5px 100px;
 }
 main h2,
 main h3 {
   display: block;
   text-align: center;
 }
+main .bg-beige {
+  background-color: #f8dabf;
+}
 
 .todolist {
-  border: 1px solid blue;
+  border-radius: 20%;
+  margin: 5px;
   width: 50%;
 }
 .todolist .containertodo {
   margin-top: 60px;
+  padding: 60px;
+}
+.todolist .containertodo #todo {
+  height: 30px;
+  width: 300px;
+  font-size: 1.5em;
+}
+.todolist .containertodo #add {
+  padding: 10px;
 }
 
 .list {
@@ -28,7 +55,7 @@ ul {
 }
 ul .complete {
   text-decoration: line-through;
-  color: #8b9999;
+  color: #F7F7F7;
   font-size: 14px;
 }
 ul li i {
@@ -39,29 +66,32 @@ ul li:hover {
   color: black;
 }
 ul li {
-  background: #0c2150;
+  background: #00526F;
   cursor: pointer;
   margin: 10px;
   padding: 10px;
   user-select: none;
-  color: #fff;
+  color: #ECFEE5;
   font-weight: 600;
   font-size: 18px;
 }
 
 .flex {
+  border-radius: 20%;
+  margin: 5px;
   width: 50%;
 }
 .flex .week {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 30px;
   padding: 10px;
 }
 .flex .week .day {
-  border: 1px solid green;
-  width: 270px;
+  border: 3px green;
+  border-style: dashed solid;
+  width: 310px;
   margin: 8px;
   padding: 9px;
 }

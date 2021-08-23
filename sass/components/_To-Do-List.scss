@@ -1,8 +1,18 @@
 .todolist {
-    border: 1px solid blue;
+    border-radius: 20%;
+    margin: 5px;
     width: 50%;
     .containertodo {
         margin-top: 60px;
+        padding: 60px;
+        #todo {
+            height: 30px;
+            width: 300px;
+            font-size: 1.5em;
+        }
+        #add {
+            padding: 10px;
+        }
     }
 }
 
@@ -30,7 +40,7 @@ ul {
         margin: 10px;
         padding: 10px;
         user-select: none;
-        color: #fff;
+        color: $color-actif;
         font-weight: 600;
         font-size: 18px;
     }
